@@ -1,10 +1,10 @@
-import Publico from './layout/Publico';
+import Public from './layout/Public';
 import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <Publico />
+      <Public />
     </div>
   );
 }
