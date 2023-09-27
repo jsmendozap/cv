@@ -1,10 +1,10 @@
-import Sidebar from './components/Sidebar';
+import Publico from './layout/Publico';
 import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar></Sidebar>
+      <Publico />
     </div>
   );
 }
