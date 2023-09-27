@@ -4,24 +4,28 @@ import foto from '../media/Foto.jpg'
 import React from 'react'
 import Label from './Label'
 import Language from './Language'
+import { useLang } from '../context/Lang'
 
 const Sidebar = () => {
+
+  const { lang } = useLang()
+
   return (
     <div className='flex flex-col h-screen w-1/6 bg-black items-center justify-center fixed'>
         <img src={foto} alt='foto' className='rounded-full h-32 w-32 object-cover object-top mb-7 border-4 border-gray-500'/>
         <span className='text-white font-bold'>Juan S. Mendoza</span>
-        <span className='text-gray-400'>Ingeniero Forestal</span>
+        <span className='text-gray-400'>{lang === 'es' ? 'Ingeniero Forestal' : 'Forest Engineer'}</span>
         <div className='flex flex-col my-10'>
-          <Label id='#home' label='Inicio'/>
-          <Label id='#about' label='Acerca de mí'/>
-          <Label id='#interest' label='Intereses'/>
-          <Label id='#experiences' label='Experiencia laboral'/>
-          <Label id='#publications' label='Publicaciones'/>
-          <Label id='#contact' label='Contacto'/>
+          <Label id='#home' label={lang === 'es' ? 'Inicio' : 'Home'}/>
+          <Label id='#about' label={lang === 'es' ? 'Acerca de mí' : 'About Me'}/>
+          <Label id='#interest' label={lang === 'es' ? 'Intereses' : 'My Interests'}/>
+          <Label id='#experiences' label={lang === 'es' ? 'Experiencia laboral' : 'Work Experience'}/>
+          <Label id='#publications' label={lang === 'es' ? 'Publicaciones' : 'Publications'}/>
+          <Label id='#contact' label={lang === 'es' ? 'Contacto' : 'Contact'}/>
         </div>
         <div className='flex'>
-          <Language flag={spain} />
-          <Language flag={usa} />
+          <Language flag={spain} name='es'/>
+          <Language flag={usa} name='en' />
         </div>
     </div>
   )
