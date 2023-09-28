@@ -17,11 +17,10 @@ const Sidebar = () => {
         <span className='text-gray-400'>{lang === 'es' ? 'Ingeniero Forestal' : 'Forest Engineer'}</span>
         <div className='flex flex-col my-10'>
           <Label id='#home' label={lang === 'es' ? 'Inicio' : 'Home'}/>
-          <Label id='#about' label={lang === 'es' ? 'Acerca de mí' : 'About Me'}/>
+          <Label id='#about' label={lang === 'es' ? 'Acerca' : 'About'}/>
           <Label id='#interest' label={lang === 'es' ? 'Intereses' : 'My Interests'}/>
           <Label id='#experiences' label={lang === 'es' ? 'Experiencia laboral' : 'Work Experience'}/>
           <Label id='#publications' label={lang === 'es' ? 'Publicaciones' : 'Publications'}/>
-          <Label id='#contact' label={lang === 'es' ? 'Contacto' : 'Contact'}/>
         </div>
         <div className='flex'>
           <Language flag={spain} name='es'/>
