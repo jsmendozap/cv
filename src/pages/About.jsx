@@ -22,7 +22,7 @@ const About = ({ title, subtitle, info }) => {
             <div className='flex flex-row mt-10 h-96'>
                 <img src={foto} alt='foto' className='h-80 mr-20 border-2 border-gray-200 rounded-md'/>
                 <div className='flex flex-col'>
-                    <div className='pb-4 border-b-2 border-red-100'>
+                    <div className='pb-5 border-b-2 border-red-100'>
                         <div style={{fontFamily: 'Inclusive Sans'}}>
                             <p className='font-semibold text-3xl pb-2'>
                                 {lang === 'en' ? info.en[0] : info.es[0]}
@@ -36,11 +36,11 @@ const About = ({ title, subtitle, info }) => {
                         </p>
                     </div>
                     <div className='mt-4 mb-3 text-left'>
-                        <p className='flex mb-3'>
+                        <p className='flex mb-1'>
                             <img src={email} alt='e-mail' className='w-5 h-5 mr-2'/>
                             <span>jsmendozap@gmail.com</span>
                         </p>
-                        <p className='mb-3'>
+                        <p className='mb-1'>
                             <a className='flex' href='https://github.com/jsmendozap' target='_blank'>
                                 <img src={gh} alt='GitHub' className='w-5 h-5 mr-2'/>
                                 <span>@jsmendozap</span>
@@ -53,7 +53,7 @@ const About = ({ title, subtitle, info }) => {
                             </a>
                         </p>
                     </div>
-                    <span className='rounded-full p-3 bg-gray-400 w-32 ml-96'>
+                    <span className='rounded-full p-3 bg-gray-500 hover:bg-gray-600 text-gray-200 font-semibold w-32 ml-96'>
                         <a href={lang === 'en' ? 'CV.pdf' : 'HV.pdf'} download='CV.pdf'>
                             {lang === 'en' ? 'Download CV' : 'Descargar CV'}
                         </a>
