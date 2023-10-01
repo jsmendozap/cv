@@ -1,12 +1,11 @@
-import GoogleFontLoader from 'react-google-font-loader';
-import { useState } from 'react';
-import Public from './layout/Public';
-import './styles/App.css';
-import { langContext } from './context/Lang';
+import GoogleFontLoader from "react-google-font-loader";
+import { useState } from "react";
+import Public from "./layout/Public";
+import "./styles/App.css";
+import { langContext } from "./context/Lang";
 
 function App() {
-
-  const [lang, setLang] = useState('es')
+  const [lang, setLang] = useState("es");
 
   return (
     <div className="App">
@@ -22,12 +21,12 @@ function App() {
           },
           {
             font: "Mukta",
-            weights: [200]
-          }
+            weights: [200],
+          },
         ]}
         subsets={["cyrillic-ext", "greek"]}
       />
-      <langContext.Provider value={{lang, setLang}}>
+      <langContext.Provider value={{ lang, setLang }}>
         <Public />
       </langContext.Provider>
     </div>

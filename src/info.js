@@ -16,33 +16,43 @@ const info = [
         "id": "about",
         "title": {"es": "Acerca de mí", "en": "About me"},
         "subtitle": {"es": "Un breve resumen de mis fortalezas",
-                     "en": "A short summary of my path"},
+                     "en": "A brief summary of my skills"},
         "component": About,
         "info": {"es":
                     [
                     "¡Hola!, soy Juan Mendoza",
                     "Ingeniero Forestal, Universidad Nacional de Colombia",
-                    "Mi sólida formación en ingeniería y ciencias de la tierra se complementa con una amplia gama de habilidades que incluyen \
-                    modelación lineal y no lineal, análisis de series de tiempo y análisis espacial utilizando herramientas como QGIS, así como\
-                    lenguajes de programación como R y Python. Además, destaco por mi capacidad en el análisis de datos y la comunicación\
-                    efectiva de resultados a través de la construcción de plataformas web."
+                    "Poseo una sólida formación en ingeniería y ciencias de la tierra que se complementa con una amplia gama de habilidades en \
+                    modelación lineal y no lineal, análisis de series de tiempo y análisis espacial, utilizando herramientas como QGIS y\
+                    lenguajes de programación tales como R y Python. Además, destaco por mi capacidad en el análisis de datos, la comunicación\
+                    efectiva de resultados a través de la construcción de plataformas web y la pasión con la que realizo cada una de mis resposabilidades."
                     ],
                  "en":
                     [
                     "¡Hi!, I am Juan Mendoza",
                     "Forest Engineer, Universidad Nacional de Colombia",
-                    "My strong engineering and geoscience background is complemented by a wide range of skills including linear and \
-                    non-linear modeling, time series analysis and spatial analysis using tools such as QGIS and programming languages such as\
-                    R and Python. In adittion, I excel in data analysis and efective comunication of results through the \
-                    construction of web platforms."    
+                    "I have a strong engineering and geoscience background that is complemented by a wide range of skills including linear and \
+                    non-linear modeling, time series analysis and spatial analysis, using tools such as QGIS and the R and Python programming languages.\
+                    In adittion, I excel in data analysis and efective comunication of results through web \
+                    platforms development and the passion I bring to each one of my compromises."    
                     ]}
     },
     {
         "id": "interest",
         "title": {"es": "Intereses", "en": "My Interests"},
-        "subtitle": {"es": "sub esp", "en": "sub eng"},
+        "subtitle": {"es": "Mis áreas de enfoque y continuo aprendizaje",
+                     "en": "Areas of focus and continue learning"},
         "component": Interest,
-        "info": {"es": "lorem ipsum", "en": "lorem ipsum ingles"}
+        "info": {"es": {"label": ["Sensores Remotos", "Análisis Espacial", "Modelación Forestal"],
+                        "text": ["A lo largo de mi formación he cultivado un profundo interés en la aplicación de la tecnología de sensores \
+                                remotos en el estudio de la dinámica forestal y climática a nivel global. La capacidad para \
+                                monitoriar la evolución de estos sistemas en el espacio y en el tiempo a través de la integración de \
+                                información proveniente de sensores remotos con técnicas estadísticas y de machine learning son una fuente constante de \
+                                motivación en mi carrera."]},
+                 "en": {"label": ["Remote Sensing", "Spatial Analysis", "Forest Modeling"],
+                        "text": ["Throughout my education, I have cultivated a deep interest in the application of remote sensing technology to the study of global\
+                        forest and climate dynamics. The ability to monitor the evolution of these systems in space and time by integrating remote \
+                        sensing information with statistical and machine learning techniques has been a constant source of motivation in my career."]}}
     },
     {
         "id": "experiences",
