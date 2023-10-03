@@ -5,6 +5,7 @@ import email from "../media/gmail.png";
 import gh from "../media/github.png";
 import linkedin from "../media/linkedin.png";
 import Title from "../components/Title";
+import grad from "../media/mortarboard.png";
 
 const About = ({ title, subtitle, info }) => {
   const { lang } = useLang();
@@ -24,9 +25,12 @@ const About = ({ title, subtitle, info }) => {
               <p className="font-semibold text-3xl pb-2">
                 {lang === "en" ? info.en[0] : info.es[0]}
               </p>
-              <span className="font-semibold text-xl">
-                {lang === "en" ? info.en[1] : info.es[1]}
-              </span>
+              <div className="flex">
+                <img src={grad} alt="graduate" className="w-5 mr-2" />
+                <span className="font-semibold text-xl">
+                  {lang === "en" ? info.en[1] : info.es[1]}
+                </span>
+              </div>
             </div>
             <p
               className="text-justify text-lg pt-6"
