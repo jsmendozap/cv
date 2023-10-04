@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.aac2e41f.css",
-    "main.js": "/cv/static/js/main.56e076fe.js",
+    "main.css": "/cv/static/css/main.000e6b4c.css",
+    "main.js": "/cv/static/js/main.ee3ae530.js",
     "static/js/787.c2800f02.chunk.js": "/cv/static/js/787.c2800f02.chunk.js",
     "static/media/forest.jpg": "/cv/static/media/forest.472276eff1b5c3b5ec0c.jpg",
     "static/media/fnf_es.gif": "/cv/static/media/fnf_es.7dd41a72ba1f7a0564f2.gif",
     "static/media/fnf_en.gif": "/cv/static/media/fnf_en.a6c713341533994a552a.gif",
     "static/media/Foto.jpg": "/cv/static/media/Foto.f21231d1e8205e749a1d.jpg",
+    "static/media/work-in-progress.png": "/cv/static/media/work-in-progress.20021d1c74edb5cccdd7.png",
     "static/media/forest.png": "/cv/static/media/forest.1403ae42d4fda91700a6.png",
     "static/media/satellite.png": "/cv/static/media/satellite.390799b3733f8b188388.png",
     "static/media/continents.png": "/cv/static/media/continents.78a7859f7537073d181b.png",
@@ -16,12 +17,12 @@
     "static/media/linkedin.png": "/cv/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/spain.png": "/cv/static/media/spain.09945efd998584311bf1.png",
     "index.html": "/cv/index.html",
-    "main.aac2e41f.css.map": "/cv/static/css/main.aac2e41f.css.map",
-    "main.56e076fe.js.map": "/cv/static/js/main.56e076fe.js.map",
+    "main.000e6b4c.css.map": "/cv/static/css/main.000e6b4c.css.map",
+    "main.ee3ae530.js.map": "/cv/static/js/main.ee3ae530.js.map",
     "787.c2800f02.chunk.js.map": "/cv/static/js/787.c2800f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aac2e41f.css",
-    "static/js/main.56e076fe.js"
+    "static/css/main.000e6b4c.css",
+    "static/js/main.ee3ae530.js"
   ]
 }
