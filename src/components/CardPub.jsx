@@ -15,7 +15,7 @@ const CardPub = ({ info }) => {
           {info.auth}
         </p>
         <p className="text-base" style={{ fontFamily: "Mukta" }}>
-          {info.year}, DOI: {info.doi}
+          DOI: {info.doi}
         </p>
       </Card>
     </div>

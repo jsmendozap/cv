@@ -10,7 +10,8 @@ const info = [
         title: "",
         subtitle: "",
         component: Home,
-        info: ""
+        info: {es: ["Ingenieria Forestal", "Sensores Remotos", "Análisis espacial", "Modelación Forestal"],
+               en: ["Forest Engineering", "Remote Sensing", "Spatial Analysis", "Forest Modeling"]}
     },
     {
         id: "about",
@@ -111,26 +112,26 @@ const info = [
         info: {es: [
                     {
                         name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
-                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo, Juan M. Giraldo, Luis F. Osorio",
-                        year: 2023, doi: "En presentación", id: 0
+                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo, Luis F. Osorio V.",
+                        doi: "En evaluación", id: 0
                     },
                     {
                         name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
-                        auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio",
-                        year: 2023, doi: "En preparación", id: 1
+                        auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio V.",
+                        doi: "En preparación", id: 1
                     }
                    ],
                en: [
-                {
-                    name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
-                    auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo, Juan M. Giraldo, Luis F. Osorio",
-                    year: 2023, doi: "In submission", id: 0
-                },
-                {
-                    name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
-                    auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio",
-                    year: 2023, doi: "In preparation", id: 1
-                }
+                    {
+                        name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
+                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo, Luis F. Osorio V.",
+                        doi: "In submission", id: 0
+                    },
+                    {
+                        name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
+                        auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio V.",
+                        doi: "In preparation", id: 1
+                    }
                ]
             }
     }

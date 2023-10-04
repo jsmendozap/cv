@@ -1,5 +1,4 @@
 import React from "react";
-import Publications from "../pages/Publications";
 
 const Section = ({ id, component }) => {
   const style = { all: "h-screen w-screen", pub: "w-screen" };
