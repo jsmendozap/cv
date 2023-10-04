@@ -40,7 +40,7 @@ const info = [
     {
         id: "interest",
         title: {es: "Intereses", en: "My Interests"},
-        subtitle: {es: "Mis áreas de enfoque y continuo aprendizaje",
+        subtitle: {es: "Áreas de enfoque y continuo aprendizaje",
                     en: "Areas of focus and continue learning"},
         component: Interest,
         info: {es: {label: ["Sensores Remotos", "Análisis Espacial", "Modelación Forestal"],
@@ -57,7 +57,7 @@ const info = [
     {
         id: "experiences",
         title: {es: "Experiencia Laboral", en: "Work Experience"},
-        subtitle: {es: "sub esp", en: "sub eng"},
+        subtitle: {es: "", en: ""},
         component: Experiences,
         info: {es: [
                     {
@@ -73,16 +73,66 @@ const info = [
                         description: "Participación en el análisis de datos y generación de modelos de \
                                 crecimiento para cuatro especies de árboles establecidas en el marco del \
                                 proyecto 'Más bosques para Medellín'."
+                    },
+                    {
+                        id: 2, rol: "Esudiante auxiliar", place: "Universidad Nacional de Colombia",
+                        date: "Marzo 2021 - Junio 2022", city: "Medellín, Colombia", 
+                        description: "Apoyo en la labor docente al ofrecer talleres de introducción al lenguage\
+                                      de programación R a estudiantes de estadística I."
                     }      
-                   ],
-               en: "lorem ipsum ingles"}
+                ],
+               en: [
+                    {
+                        id: 0, rol: "Remote sensing analyst", place: "Universidad de Antioquia",
+                        date: "August 2023 - Present", city: "Medellín, Colombia", 
+                        description: "Contribution to the development of algorithms for processing satellite \
+                                    imagery to classify land cover using deep learning techniques."
+                    },
+                    {
+                        id: 1, rol: "Auxiliar student", place: "Universidad Nacional de Colombia",
+                        date: "May 2023 - June 2023", city: "Medellín, Colombia", 
+                        description: "Participation in the data analysis and generation of growth models for \
+                                    four native tree species established as part of 'Más bosques para \
+                                    Medellín' project."
+                    },
+                    {
+                        id: 2, rol: "Auxiliar student", place: "Universidad Nacional de Colombia",
+                        date: "March 2021 - June 2022", city: "Medellín, Colombia", 
+                        description: "Support the teaching work to offering workshops in introduction to R\
+                                      programming language for students of first level of statistics."
+                    }      
+               ]}
     },
     {
-        "id": "publications",
-        "title": {"es": "Publicaciones", "en": "Publications"},
-        "subtitle": {"es": "sub esp", "en": "sub eng"},
-        "component": Publications,
-        "info": {"es": "lorem ipsum", "en": "lorem ipsum ingles"}
+        id: "publications",
+        title: {es: "Publicaciones", en: "Publications"},
+        subtitle: {es: "", en: ""},
+        component: Publications,
+        info: {es: [
+                    {
+                        name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
+                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo, Juan M. Giraldo, Luis F. Osorio",
+                        year: 2023, doi: "En presentación", id: 0
+                    },
+                    {
+                        name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
+                        auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio",
+                        year: 2023, doi: "En preparación", id: 1
+                    }
+                   ],
+               en: [
+                {
+                    name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
+                    auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo, Juan M. Giraldo, Luis F. Osorio",
+                    year: 2023, doi: "In submission", id: 0
+                },
+                {
+                    name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
+                    auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio",
+                    year: 2023, doi: "In preparation", id: 1
+                }
+               ]
+            }
     }
 ]
 

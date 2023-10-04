@@ -11,12 +11,12 @@ const Experiences = ({ title, subtitle, info }) => {
   return (
     <div className="mt-8 ml-72 mr-16">
       <Title title={title} subtitle={subtitle} />
-      <div className="mt-10 max-w max-h-96 overflow-y-auto p-4">
+      <div className="mt-10 ml-10">
         <Timeline>
           {items.map((el) => {
             return (
-              <Timeline.Item>
-                <Work info={el} key={el.id} />
+              <Timeline.Item key={el.id}>
+                <Work info={el} />
               </Timeline.Item>
             );
           })}
