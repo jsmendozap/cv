@@ -10,8 +10,8 @@ const info = [
         title: "",
         subtitle: "",
         component: Home,
-        info: {es: ["Ingenieria Forestal", "Sensores Remotos", "Análisis espacial", "Modelación Forestal"],
-               en: ["Forest Engineering", "Remote Sensing", "Spatial Analysis", "Forest Modeling"]}
+        info: {es: ["Sensores Remotos", "Análisis espacial", "Modelación Forestal"],
+               en: ["Remote Sensing", "Spatial Analysis", "Forest Modeling"]}
     },
     {
         id: "about",
@@ -49,11 +49,33 @@ const info = [
                                 remotos en el estudio de la dinámica forestal y climática a nivel global. La capacidad para \
                                 monitoriar la evolución de estos sistemas en el espacio y en el tiempo a través de la integración de \
                                 información proveniente de sensores remotos con técnicas estadísticas y de machine learning son una fuente constante de \
-                                motivación en mi carrera."]},
+                                motivación en mi carrera.",
+                            
+                                "Mi interés en el análisis espacial se centra en la aplicación de técnicas de estadística espacial para comprender y modelar los\
+                                procesos que ocurren en el espacio geográfico. Además, mi pasión se extiende a la presentación efectiva de los resultados. Considero fundamental\
+                                la construcción de geovisores y otras herramientas de visualización interactiva para comunicar de manera clara y accesible los resultados\
+                                a diversos públicos.",
+
+                                "Poseo un profundo interés por comprender los procesos biológicos y ecológicos que influencia el crecimiento forestal y la acumulación de biomasa.\
+                                Asimismo, estoy interesado en emplear métodos estadísticos para describir estas relaciones. Por otro lado, me apasiona la idea de explorar los últimos avances\
+                                en el uso de tecnologías geoespaciales modernas como SAR y LIDAR ya que considero que estas herramientas tienen el potencial de proveer información\
+                                invaluable de la dinámica compleja de los ecosistemas forestales."
+                            ]
+                        },
                 en: {label: ["Remote Sensing", "Spatial Analysis", "Forest Modeling"],
                      text: ["Throughout my education, I have cultivated a deep interest in the application of remote sensing technology to the study of global\
                             forest and climate dynamics. The ability to monitor the evolution of these systems in space and time by integrating remote \
-                            sensing information with statistical and machine learning techniques has been a constant source of motivation in my career."]}}
+                            sensing information with statistical and machine learning techniques has been a constant source of motivation in my career.",
+                            
+                            "My interest in spatial analysis focuses on the application of spatial statistical techniques to understand and model processes\
+                            occurring in geographic space. In addition, my passion extends to the effective presentation of results. I believe it is essential\
+                            to develop geoviewers and other interactive visualization tools to communicate results in a clear and accessible way to different audiences.",
+                            
+                            "I have a profound interest in understanding the biological and ecological processes that influence forest growth and biomass accumulation, along\
+                            with a keenness about employing statistical methods to describe these relationships. Furthermore, I am also interested in delve into the latest advancements in modern geospatial\
+                            technologies such as SAR and LIDAR, as I believe these tools have the potential to provide valuable insights into the complex dynamics of forest ecosystems."
+                        ]
+                        }}
     },
     {
         id: "experiences",

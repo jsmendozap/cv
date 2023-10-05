@@ -6,6 +6,8 @@ import forest from "../media/forest.png";
 import continents from "../media/continents.png";
 import { useLang } from "../context/Lang";
 import RS from "../components/RS";
+import SA from "../components/SA";
+import FM from "../components/FM";
 
 const Interest = ({ title, subtitle, info }) => {
   const { lang } = useLang();
@@ -29,7 +31,7 @@ const Interest = ({ title, subtitle, info }) => {
           {lang === "en" ? info.en.label[1] : info.es.label[1]}
         </span>
       ),
-      children: "Content of Tab Pane 2",
+      children: <SA info={info} />,
     },
     {
       key: "3",
@@ -39,7 +41,7 @@ const Interest = ({ title, subtitle, info }) => {
           {lang === "en" ? info.en.label[2] : info.es.label[2]}
         </span>
       ),
-      children: "Content of Tab Pane 5",
+      children: <FM info={info} />,
     },
   ];
 
