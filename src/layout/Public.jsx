@@ -1,10 +1,17 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 import Body from "../components/Body";
-import MobileView from "../components/MobileView";
+import MobileMenu from "../components/MobileMenu";
+import { FloatButton } from "antd";
+import translate from "../media/translation.png";
+import uk from "../media/united-kingdom.png";
+import spain from "../media/spain.png";
+import { useLang } from "../context/Lang";
 
 const Public = () => {
   const screenWidth = window.innerWidth >= 1150;
+  const { setLang } = useLang();
+
   return (
     <div>
       {screenWidth ? (
@@ -13,7 +20,25 @@ const Public = () => {
           <Body />
         </div>
       ) : (
-        <MobileView />
+        <div>
+          <MobileMenu />
+          <Body />
+          <FloatButton.Group
+            trigger="click"
+            type="default"
+            style={{ right: 20, color: "gray" }}
+            icon={<img src={translate} alt="img" />}
+          >
+            <FloatButton
+              icon={<img src={spain} alt="uk" />}
+              onClick={() => setLang("es")}
+            />
+            <FloatButton
+              icon={<img src={uk} alt="uk" />}
+              onClick={() => setLang("en")}
+            />
+          </FloatButton.Group>
+        </div>
       )}
     </div>
   );

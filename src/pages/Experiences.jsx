@@ -9,9 +9,9 @@ const Experiences = ({ title, subtitle, info }) => {
   const items = lang === "en" ? info.en : info.es;
 
   return (
-    <div className="mt-8 ml-72 mr-16">
+    <div className="lg:mt-8 mt-80 mx-5 lg:ml-72 lg:mr-16">
       <Title title={title} subtitle={subtitle} />
-      <div className="mt-10 ml-10">
+      <div className="mt-10 lg:ml-10">
         <Timeline>
           {items.map((el) => {
             return (

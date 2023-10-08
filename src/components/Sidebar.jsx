@@ -1,4 +1,4 @@
-import usa from "../media/united-states.png";
+import uk from "../media/united-kingdom.png";
 import spain from "../media/spain.png";
 import foto from "../media/Foto.jpg";
 import React from "react";
@@ -38,7 +38,7 @@ const Sidebar = () => {
       </div>
       <div className="flex">
         <Language flag={spain} name="es" />
-        <Language flag={usa} name="en" />
+        <Language flag={uk} name="en" />
       </div>
     </div>
   );

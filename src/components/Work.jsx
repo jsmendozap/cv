@@ -3,10 +3,10 @@ import { Card } from "antd";
 
 const Work = ({ info }) => {
   return (
-    <div className="mx-10 hover:shadow-md hover:rounded-md text-justify">
+    <div className="lg:mx-10 hover:shadow-md hover:rounded-md text-justify">
       <Card>
         <p
-          className="font-semibold text-xl text-gray-500"
+          className="font-semibold text-xl text-gray-500 text-left"
           style={{ fontFamily: "Inclusive Sans" }}
         >
           {info.rol}

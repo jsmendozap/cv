@@ -11,13 +11,14 @@ import FM from "../components/FM";
 
 const Interest = ({ title, subtitle, info }) => {
   const { lang } = useLang();
+  const screenWidth = window.innerWidth >= 1150;
 
   const items = [
     {
       key: "1",
       label: (
         <span className="flex">
-          <img src={satellite} alt="satellite" className="w-8 mr-2" />
+          <img src={satellite} alt="satellite" className="w-8 lg:mr-2" />
           {lang === "en" ? info.en.label[0] : info.es.label[0]}
         </span>
       ),
@@ -46,10 +47,16 @@ const Interest = ({ title, subtitle, info }) => {
   ];
 
   return (
-    <div className="mt-8 ml-72 mr-16">
+    <div className="lg:mt-8 lg:ml-72 lg:mr-16 max-md:m-5">
       <Title title={title} subtitle={subtitle} />
       <div className="flex flex-row mt-10 h-96">
-        <Tabs animated={true} tabPosition="left" items={items} />
+        <Tabs
+          animated={true}
+          tabPosition={screenWidth ? "left" : "top"}
+          items={items}
+          className="max-md:w-80"
+          tabBarGutter={50}
+        />
       </div>
     </div>
   );

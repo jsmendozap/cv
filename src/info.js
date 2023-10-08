@@ -98,7 +98,7 @@ const info = [
                                 proyecto 'Más bosques para Medellín'."
                     },
                     {
-                        id: 2, rol: "Esudiante auxiliar", place: "Universidad Nacional de Colombia",
+                        id: 2, rol: "Estudiante auxiliar", place: "Universidad Nacional de Colombia",
                         date: "Marzo 2021 - Junio 2022", city: "Medellín, Colombia", 
                         description: "Apoyo en la labor docente al ofrecer talleres de introducción al lenguage\
                                       de programación R a estudiantes de estadística I."

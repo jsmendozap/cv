@@ -3,10 +3,10 @@ import { Card } from "antd";
 
 const CardPub = ({ info }) => {
   return (
-    <div className="mx-10 hover:shadow-md hover:rounded-md text-justify mt-4">
+    <div className="lg:mx-10 hover:shadow-md hover:rounded-md text-justify mt-4">
       <Card>
         <p
-          className="font-semibold text-xl text-gray-600"
+          className="font-semibold text-xl text-gray-600 text-left"
           style={{ fontFamily: "Inclusive Sans" }}
         >
           {info.name}
