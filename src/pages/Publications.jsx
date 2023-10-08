@@ -8,7 +8,7 @@ const Publications = ({ title, subtitle, info }) => {
   const items = lang === "en" ? info.en : info.es;
 
   return (
-    <div className="lg:mt-32 mb-32 lg:ml-72 lg:mr-16 max-md:mx-5">
+    <div className="lg:mt-32 mb-32 lg:ml-72 lg:mr-16 mx-5 sm:mx-16">
       <Title title={title} subtitle={subtitle} />
       <div className="my-10">
         {items.map((el) => {

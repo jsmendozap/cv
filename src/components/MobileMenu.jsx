@@ -46,15 +46,16 @@ const MobileMenu = () => {
         },
       ],
     },
+    {
+      label: (
+        <span className="font-semibold pl-10">Juan Sebastián Mendoza Páez</span>
+      ),
+    },
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-full">
-      <Menu
-        mode="horizontal"
-        items={items}
-        className="bg-transparent border-0"
-      />
+    <div className="fixed top-0 w-full">
+      <Menu mode="horizontal" items={items} />
     </div>
   );
 };

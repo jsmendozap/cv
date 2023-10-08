@@ -5,7 +5,7 @@ import { useLang } from "../context/Lang";
 
 const Home = ({ info }) => {
   const { lang } = useLang();
-  const screenWidth = window.innerWidth >= 1150;
+  const screenWidth = window.innerWidth >= 1151;
 
   return (
     <div>

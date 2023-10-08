@@ -11,14 +11,14 @@ const About = ({ title, subtitle, info }) => {
   const { lang } = useLang();
 
   return (
-    <div className="mt-8 lg:ml-72 lg:mr-16 m-5">
+    <div className="mt-8 lg:ml-72 lg:mr-16 mx-5 sm:mx-16">
       <Title title={title} subtitle={subtitle} />
       <div className="lg:flex lg:flex-row mt-10 lg:h-96">
-        <div className="max-md:flex justify-center lg:w-screen lg:mr-16">
+        <div className="flex justify-center lg:w-screen lg:mr-16">
           <img
             src={foto}
             alt="foto"
-            className="h-80 border-2 border-gray-200 rounded-md max-md:mb-6"
+            className="h-80 border-2 border-gray-200 rounded-md mb-6"
           />
         </div>
         <div className="flex flex-col">
@@ -27,7 +27,7 @@ const About = ({ title, subtitle, info }) => {
               <p className="font-semibold text-3xl pb-2">
                 {lang === "en" ? info.en[0] : info.es[0]}
               </p>
-              <div className="flex">
+              <div className="flex justify-center">
                 <img
                   src={grad}
                   alt="graduate"
@@ -45,12 +45,12 @@ const About = ({ title, subtitle, info }) => {
               {lang === "en" ? info.en[2] : info.es[2]}
             </p>
           </div>
-          <div className="flex max-md:flex-col mt-4 lg:mb-9 text-left lg:place-content-around">
-            <p className="flex mb-1 max-md:mb-3">
+          <div className="flex flex-col lg:flex-row mt-4 lg:mb-9 text-left lg:place-content-around">
+            <p className="flex lg:mb-1 mb-3">
               <img src={email} alt="e-mail" className="w-5 h-5 mr-2" />
               <span>jsmendozap@gmail.com</span>
             </p>
-            <p className="mb-1 max-md:mb-3">
+            <p className="lg:mb-1 mb-3">
               <a
                 className="flex"
                 href="https://github.com/jsmendozap"
@@ -73,11 +73,13 @@ const About = ({ title, subtitle, info }) => {
               </a>
             </p>
           </div>
-          <span className="rounded-full p-3 bg-gray-500 hover:bg-gray-600 text-gray-200 font-semibold w-32 lg:ml-96 ml-52">
-            <a href={lang === "en" ? "CV.pdf" : "HV.pdf"} download="CV.pdf">
-              {lang === "en" ? "Download CV" : "Descargar CV"}
-            </a>
-          </span>
+          <div className="text-right mr-5 sm:mr-24 sm:mt-5 mb-10">
+            <span className="rounded-full p-3 bg-gray-500 hover:bg-gray-600 text-gray-200 font-semibold w-32">
+              <a href={lang === "en" ? "CV.pdf" : "HV.pdf"} download="CV.pdf">
+                {lang === "en" ? "Download CV" : "Descargar CV"}
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>

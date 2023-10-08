@@ -11,7 +11,7 @@ import FM from "../components/FM";
 
 const Interest = ({ title, subtitle, info }) => {
   const { lang } = useLang();
-  const screenWidth = window.innerWidth >= 1150;
+  const screenWidth = window.innerWidth >= 1151;
 
   const items = [
     {
@@ -47,15 +47,15 @@ const Interest = ({ title, subtitle, info }) => {
   ];
 
   return (
-    <div className="lg:mt-8 lg:ml-72 lg:mr-16 max-md:m-5">
+    <div className="lg:mt-8 lg:ml-72 lg:mr-16 mx-5 sm:mx-16">
       <Title title={title} subtitle={subtitle} />
       <div className="flex flex-row mt-10 h-96">
         <Tabs
           animated={true}
           tabPosition={screenWidth ? "left" : "top"}
           items={items}
-          className="max-md:w-80"
-          tabBarGutter={50}
+          style={{ width: "100%" }}
+          tabBarGutter={screenWidth ? 12 : 50}
         />
       </div>
     </div>

@@ -9,7 +9,7 @@ import spain from "../media/spain.png";
 import { useLang } from "../context/Lang";
 
 const Public = () => {
-  const screenWidth = window.innerWidth >= 1150;
+  const screenWidth = window.innerWidth >= 1151;
   const { setLang } = useLang();
 
   return (
@@ -26,7 +26,7 @@ const Public = () => {
           <FloatButton.Group
             trigger="click"
             type="default"
-            style={{ right: 20, color: "gray" }}
+            style={{ right: 20 }}
             icon={<img src={translate} alt="img" />}
           >
             <FloatButton
