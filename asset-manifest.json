@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.a2d92fd6.css",
-    "main.js": "/cv/static/js/main.391bca0a.js",
+    "main.css": "/cv/static/css/main.86cadaf7.css",
+    "main.js": "/cv/static/js/main.74cc9ae0.js",
     "static/js/787.c2800f02.chunk.js": "/cv/static/js/787.c2800f02.chunk.js",
     "static/media/forest.jpg": "/cv/static/media/forest.472276eff1b5c3b5ec0c.jpg",
     "static/media/fnf_es.gif": "/cv/static/media/fnf_es.7dd41a72ba1f7a0564f2.gif",
     "static/media/fnf_en.gif": "/cv/static/media/fnf_en.a6c713341533994a552a.gif",
     "static/media/Foto.jpg": "/cv/static/media/Foto.f21231d1e8205e749a1d.jpg",
     "static/media/kriging.png": "/cv/static/media/kriging.ecfaa95e852fe0545443.png",
-    "static/media/work-in-progress.png": "/cv/static/media/work-in-progress.20021d1c74edb5cccdd7.png",
+    "static/media/united-kingdom.png": "/cv/static/media/united-kingdom.789ff1da7dc0b7ff0220.png",
     "static/media/forest.png": "/cv/static/media/forest.1403ae42d4fda91700a6.png",
     "static/media/satellite.png": "/cv/static/media/satellite.390799b3733f8b188388.png",
     "static/media/continents.png": "/cv/static/media/continents.78a7859f7537073d181b.png",
-    "static/media/united-states.png": "/cv/static/media/united-states.82bd821876ded6ae7d38.png",
+    "static/media/translation.png": "/cv/static/media/translation.71431e6e92d6aa14bdb1.png",
     "static/media/github.png": "/cv/static/media/github.22cfdd1cba253783ce51.png",
     "static/media/gmail.png": "/cv/static/media/gmail.a2f2146f929409405da0.png",
     "static/media/linkedin.png": "/cv/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/spain.png": "/cv/static/media/spain.09945efd998584311bf1.png",
     "index.html": "/cv/index.html",
-    "main.a2d92fd6.css.map": "/cv/static/css/main.a2d92fd6.css.map",
-    "main.391bca0a.js.map": "/cv/static/js/main.391bca0a.js.map",
+    "main.86cadaf7.css.map": "/cv/static/css/main.86cadaf7.css.map",
+    "main.74cc9ae0.js.map": "/cv/static/js/main.74cc9ae0.js.map",
     "787.c2800f02.chunk.js.map": "/cv/static/js/787.c2800f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2d92fd6.css",
-    "static/js/main.391bca0a.js"
+    "static/css/main.86cadaf7.css",
+    "static/js/main.74cc9ae0.js"
   ]
 }
