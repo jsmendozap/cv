@@ -16,7 +16,7 @@ const Home = ({ info }) => {
       />
       {screenWidth ? (
         <div className="absolute top-24 left-1/3 ml-10 flex flex-col items-center justify-center">
-          <h1 className="text-4xl text-xl font-bold text-green-600">
+          <h1 className="text-4xl font-bold text-green-600">
             Juan Sebastián Mendoza Páez
           </h1>
           <p className="mt-4 text-2xl text-gray-900 font-semibold">
