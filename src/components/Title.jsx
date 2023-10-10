@@ -7,7 +7,7 @@ const Title = ({ title, subtitle }) => {
   return (
     <div className="text-left pb-5 border-b-2 border-gray-200">
       <h2
-        className="font-bold text-gray-900 text-5xl pb-2"
+        className="font-bold text-gray-900 text-4xl lg:text-5xl pb-2"
         style={{ fontFamily: "Bree Serif" }}
       >
         {lang === "en" ? title.en : title.es}

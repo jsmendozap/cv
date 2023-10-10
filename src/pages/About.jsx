@@ -11,7 +11,7 @@ const About = ({ title, subtitle, info }) => {
   const { lang } = useLang();
 
   return (
-    <div className="mt-8 lg:ml-72 lg:mr-16 mx-5 sm:mx-16">
+    <div className="mt-8 lg:ml-72 lg:mr-16 mx-8 sm:mx-16">
       <Title title={title} subtitle={subtitle} />
       <div className="lg:flex lg:flex-row mt-10 lg:h-96">
         <div className="flex justify-center lg:w-screen lg:mr-16">
@@ -24,7 +24,7 @@ const About = ({ title, subtitle, info }) => {
         <div className="flex flex-col">
           <div className="pb-5 border-b-2 border-red-100">
             <div style={{ fontFamily: "Inclusive Sans" }}>
-              <p className="font-semibold text-3xl pb-2">
+              <p className="font-semibold text-2xl lg:text-3xl pb-2">
                 {lang === "en" ? info.en[0] : info.es[0]}
               </p>
               <div className="flex justify-center">
@@ -33,7 +33,7 @@ const About = ({ title, subtitle, info }) => {
                   alt="graduate"
                   className="lg:w-5 w-8 h-6 mr-2"
                 />
-                <span className="font-semibold text-xl">
+                <span className="font-semibold text-lg lg:text-xl">
                   {lang === "en" ? info.en[1] : info.es[1]}
                 </span>
               </div>
