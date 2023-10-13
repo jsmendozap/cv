@@ -1,15 +1,20 @@
 import React from "react";
 import { useLang } from "../context/Lang";
-import { MapContainer, TileLayer, ImageOverlay } from "react-leaflet";
+import { MapContainer, TileLayer, ImageOverlay, Marker } from "react-leaflet";
 import { LatLngBounds } from "leaflet";
 
 const RS = ({ info }) => {
   const { lang } = useLang();
 
-  const url = "http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg";
-  const bounds = new LatLngBounds(
+  const url =
+    "https://github.com/jsmendozap/cv/blob/leaflet/src/media/2017.png";
+  /*const bounds = new LatLngBounds(
     [2.64, -73.4415555555556],
     [1.60422222222222, -74.7488888888889]
+  );*/
+  const bounds = new LatLngBounds(
+    [40.712216, -74.22655],
+    [40.773941, -74.12544]
   );
 
   return (
@@ -27,6 +32,7 @@ const RS = ({ info }) => {
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           />
           <ImageOverlay url={url} bounds={bounds} alt="prueba" opacity={0.4} />
+          <Marker position={[40.712216, -74.22655]} />
         </MapContainer>
       </div>
     </div>
