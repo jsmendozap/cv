@@ -1,27 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLang } from "../context/Lang";
-import fnf_en from "../media/fnf_en.gif";
-import fnf_es from "../media/fnf_es.gif";
-import { Modal } from "antd";
-import { MapContainer, TileLayer } from "react-leaflet";
-import GeoTiff from "./GeoTiff";
+import { MapContainer, TileLayer, ImageOverlay } from "react-leaflet";
+import { LatLngBounds } from "leaflet";
 
 const RS = ({ info }) => {
   const { lang } = useLang();
-  const [isOpen, setOpen] = useState(false);
 
-  /*
-<img
-  src={lang === "en" ? fnf_en : fnf_es}
-  className="h-72 cursor-pointer"
-  onClick={() => {
-    setOpen(true);
-  }}
-/>
-*/
-  const handleOk = () => {
-    setOpen(false);
-  };
+  const url = "http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg";
+  const bounds = new LatLngBounds(
+    [2.64, -73.4415555555556],
+    [1.60422222222222, -74.7488888888889]
+  );
 
   return (
     <div>
@@ -37,22 +26,9 @@ const RS = ({ info }) => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
           />
+          <ImageOverlay url={url} bounds={bounds} alt="prueba" opacity={0.4} />
         </MapContainer>
       </div>
-      <Modal
-        width={750}
-        open={isOpen}
-        closable={false}
-        footer={(_, { OkBtn }) => (
-          <>
-            <OkBtn className="bg-gray-800" />
-          </>
-        )}
-        onOk={handleOk}
-        okButtonProps={{ className: "bg-gray-700" }}
-      >
-        <img src={lang === "en" ? fnf_en : fnf_es} />
-      </Modal>
     </div>
   );
 };
