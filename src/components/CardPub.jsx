@@ -6,7 +6,7 @@ const CardPub = ({ info }) => {
     <div className="lg:mx-10 hover:shadow-md hover:rounded-md text-justify mt-4">
       <Card>
         <p
-          className="font-semibold text-lg lg:text-xl text-gray-600 text-left"
+          className="font-semibold text-lg text-gray-600 text-left"
           style={{ fontFamily: "Inclusive Sans" }}
         >
           {info.name}

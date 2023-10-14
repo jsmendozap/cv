@@ -40,7 +40,7 @@ const SA = ({ info }) => {
       y: 0.95,
     },
     width: 550,
-    height: 300,
+    height: 280,
     geo: {
       projection: {
         type: "robinson",

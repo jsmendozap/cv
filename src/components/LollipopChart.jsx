@@ -12,7 +12,6 @@ const LollipopChart = ({ year }) => {
   const [img, setImg] = useState(null);
 
   useEffect(() => {
-    // Cargar la imagen según el año
     let imgSrc;
     switch (year) {
       case 2017:
@@ -74,7 +73,7 @@ const LollipopChart = ({ year }) => {
 
   const layout = {
     width: 360,
-    height: 300,
+    height: 290,
     xaxis: {
       title: lang === "es" ? "Área (Km<sup>2</sup>)" : "Area (Km<sup>2</sup>)",
     },
@@ -95,7 +94,7 @@ const LollipopChart = ({ year }) => {
     <div className="flex flex-row">
       <Plot data={plot} layout={layout} config={{ displayModeBar: false }} />
       <div>
-        <img src={img} alt="img" className="w-72 h-60 pt-3 mr-5" />
+        <img src={img} alt="img" className="w-72 h-56 pt-3 mr-5" />
         <div className="mt-2">
           <span
             className="font-semibold"
