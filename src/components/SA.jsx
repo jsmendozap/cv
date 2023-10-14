@@ -71,7 +71,9 @@ const SA = ({ info }) => {
       >
         {lang === "en" ? info.en.text[1] : info.es.text[1]}
       </p>
-      <Plot data={data} layout={layout} config={{ displayModeBar: false }} />
+      <div className="hidden md:block">
+        <Plot data={data} layout={layout} config={{ displayModeBar: false }} />
+      </div>
     </div>
   );
 };
