@@ -9,7 +9,7 @@ const RS = ({ info }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setYear((prevYear) => (prevYear === 2020 ? 2017 : prevYear + 1));
-    }, 1000);
+    }, 1500);
 
     return () => {
       clearInterval(interval);
@@ -24,7 +24,9 @@ const RS = ({ info }) => {
       >
         {lang === "en" ? info.en.text[0] : info.es.text[0]}
       </p>
-      <LollipopChart year={year} />
+      <div className="hidden md:block">
+        <LollipopChart year={year} />
+      </div>
     </div>
   );
 };

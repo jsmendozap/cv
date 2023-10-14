@@ -94,7 +94,20 @@ const LollipopChart = ({ year }) => {
   return (
     <div className="flex flex-row">
       <Plot data={plot} layout={layout} config={{ displayModeBar: false }} />
-      <img src={img} alt="img" className="w-72 h-64 pt-3 mr-5" />
+      <div>
+        <img src={img} alt="img" className="w-72 h-60 pt-3 mr-5" />
+        <div className="mt-2">
+          <span
+            className="font-semibold"
+            style={{ fontFamily: "Inclusive Sans" }}
+          >
+            {lang === "es" ? "Fuente: " : "Source: "}
+          </span>
+          <span style={{ fontFamily: "Mukta" }}>
+            Google Earth Engine - JAXA EORC
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
