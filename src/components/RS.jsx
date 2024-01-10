@@ -24,7 +24,7 @@ const RS = ({ info }) => {
       >
         {lang === "en" ? info.en.text[0] : info.es.text[0]}
       </p>
-      <div className="hidden md:block">
+      <div className="hidden md:block xl:ml-32 xl:mt-16">
         <LollipopChart year={year} />
       </div>
     </div>

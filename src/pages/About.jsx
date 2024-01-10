@@ -11,29 +11,29 @@ const About = ({ title, subtitle, info }) => {
   const { lang } = useLang();
 
   return (
-    <div className="mt-8 lg:ml-72 lg:mr-16 mx-8 sm:mx-16">
+    <div className="mt-8 mx-8 sm:mx-16 lg:ml-72 lg:mr-20 xl:ml-96 xl:mr-32 xl:mt-16">
       <Title title={title} subtitle={subtitle} />
       <div className="lg:flex lg:flex-row mt-10 lg:h-96">
-        <div className="flex justify-center lg:w-screen lg:mr-16">
+        <div className="flex justify-center lg:w-screen lg:mr-16  xl:mt-10">
           <img
             src={foto}
             alt="foto"
-            className="h-80 border-2 border-gray-200 rounded-md mb-6"
+            className="h-80 xl:h-max xl:w-80 border-2 border-gray-200 rounded-md mb-6"
           />
         </div>
         <div className="flex flex-col">
-          <div className="pb-5 border-b-2 border-red-100">
+          <div className="pb-5 border-b-2 border-red-100  xl:pb-12 xl:mb-5">
             <div style={{ fontFamily: "Inclusive Sans" }}>
-              <p className="font-semibold text-2xl lg:text-3xl pb-2">
+              <p className="font-semibold text-2xl lg:text-3xl pb-2 xl:mb-3 xl:text-4xl">
                 {lang === "en" ? info.en[0] : info.es[0]}
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center xl:mb-6">
                 <img
                   src={grad}
                   alt="graduate"
                   className="lg:w-5 w-8 h-6 mr-2"
                 />
-                <span className="font-semibold text-lg lg:text-xl">
+                <span className="font-semibold text-lg lg:text-xl xl:text-2xl">
                   {lang === "en" ? info.en[1] : info.es[1]}
                 </span>
               </div>
