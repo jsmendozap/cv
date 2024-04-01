@@ -1,5 +1,5 @@
 import React from "react";
-import foto from "../media/Foto.jpg";
+import foto from "../media/Foto2.jpeg";
 import { useLang } from "../context/Lang";
 import email from "../media/gmail.png";
 import gh from "../media/github.png";
@@ -18,7 +18,7 @@ const About = ({ title, subtitle, info }) => {
           <img
             src={foto}
             alt="foto"
-            className="h-80 xl:h-max xl:w-80 border-2 border-gray-200 rounded-md mb-6"
+            className="h-64 xl:h-max xl:w-80 border-2 border-gray-200 rounded-md mb-6"
           />
         </div>
         <div className="flex flex-col">

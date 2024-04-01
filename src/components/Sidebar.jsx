@@ -1,6 +1,6 @@
 import uk from "../media/united-kingdom.png";
 import spain from "../media/spain.png";
-import foto from "../media/Foto.jpg";
+import foto from "../media/Foto.jpeg";
 import React from "react";
 import Label from "./Label";
 import Language from "./Language";
@@ -10,11 +10,11 @@ const Sidebar = () => {
   const { lang } = useLang();
 
   return (
-    <div className="flex flex-col h-screen w-1/6 bg-black items-center justify-center fixed">
+    <div className="flex flex-col h-screen w-1/5 bg-gray-900 items-center justify-center fixed">
       <img
         src={foto}
         alt="foto"
-        className="rounded-full h-32 w-32 object-cover object-top mb-7 border-4 border-gray-500"
+        className="rounded-full h-36 w-36 object-cover object-top mb-7 border-4 border-gray-500"
       />
       <span className="text-white font-bold">Juan S. Mendoza</span>
       <span className="text-gray-400">
