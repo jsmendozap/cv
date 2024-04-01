@@ -1,6 +1,6 @@
 import React from "react";
 import forest from "../media/forest.jpg";
-import ReactTyped from "react-typed";
+import { ReactTyped } from "react-typed";
 import { useLang } from "../context/Lang";
 
 const Home = ({ info }) => {

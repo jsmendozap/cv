@@ -16,7 +16,7 @@ const Sidebar = () => {
         alt="foto"
         className="rounded-full h-36 w-36 object-cover object-top mb-7 border-4 border-gray-500"
       />
-      <span className="text-white font-bold">Juan S. Mendoza</span>
+      <span className="text-white font-bold">Juan S. Mendoza Páez</span>
       <span className="text-gray-400">
         {lang === "es" ? "Ingeniero Forestal" : "Forest Engineer"}
       </span>
