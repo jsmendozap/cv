@@ -143,11 +143,6 @@ const info = [
                         name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
                         auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo, Luis F. Osorio V.",
                         doi: "In submission", id: 0
-                    },
-                    {
-                        name: "Carbon accumulation in aerial biomass of mixed plantations in tropical Andes",
-                        auth: "Juan M. Giraldo, Jorge A. Giraldo, Juan Mendoza, Luis F. Osorio V.",
-                        doi: "In preparation", id: 1
                     }
                ]
             }
