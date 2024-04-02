@@ -85,7 +85,7 @@ const info = [
         info: {es: [
                     {
                         id: 0, rol: "Analista de imágenes satelitales", place: "Universidad de Antioquia",
-                        date: "Agosto 2023 - Presente", city: "Medellín, Colombia", 
+                        date: "Agosto 2023 - Diciembre 2023", city: "Medellín, Colombia", 
                         description: "Participación en el desarrollo de algoritmos para procesamiento de \
                                 imágenes satelitales con fines de clasificación de coberturas utilizando \
                                 técnicas de aprendizaje automático."
@@ -107,7 +107,7 @@ const info = [
                en: [
                     {
                         id: 0, rol: "Remote sensing analyst", place: "Universidad de Antioquia",
-                        date: "August 2023 - Present", city: "Medellín, Colombia", 
+                        date: "August 2023 - December 2023", city: "Medellín, Colombia", 
                         description: "Contribution to the development of algorithms for processing satellite \
                                     imagery to classify land cover using deep learning techniques."
                     },
