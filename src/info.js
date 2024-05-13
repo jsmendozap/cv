@@ -86,43 +86,32 @@ const info = [
                     {
                         id: 0, rol: "Analista de imágenes satelitales", place: "Universidad de Antioquia",
                         date: "Agosto 2023 - Diciembre 2023", city: "Medellín, Colombia", 
-                        description: "Participación en el desarrollo de algoritmos para procesamiento de \
-                                imágenes satelitales con fines de clasificación de coberturas utilizando \
-                                técnicas de aprendizaje automático."
+                        description: "Participación en el desarrollo de algoritmos para la adquisión y \
+                                manipulación de imágenes satelitales con fines de clasificación de coberturas \
+                                utilizando técnicas de aprendizaje automático."
                     },
                     {
-                        id: 1, rol: "Estudiante auxiliar", place: "Universidad Nacional de Colombia",
-                        date: "Mayo 2023 - Junio 2023", city: "Medellín, Colombia", 
-                        description: "Participación en el análisis de datos y generación de modelos de \
-                                crecimiento para cuatro especies de árboles establecidas en el marco del \
-                                proyecto 'Más bosques para Medellín'."
-                    },
-                    {
-                        id: 2, rol: "Estudiante auxiliar", place: "Universidad Nacional de Colombia",
-                        date: "Marzo 2021 - Junio 2022", city: "Medellín, Colombia", 
-                        description: "Apoyo en la labor docente al ofrecer talleres de introducción al lenguage\
-                                      de programación R a estudiantes de estadística I."
+                        id: 1, rol: "Investigador asociado voluntario", place: "KU Leuven",
+                        date: "Mayo 2024 - Actual", city: "Online", 
+                        description: "Apoyo en el proyecto sobre automatización, análisis estadístico y \
+                                quimiometría para la deshidrogenación oxidativa de propano en el \
+                                grupo Dusselier."
                     }      
                 ],
                en: [
                     {
-                        id: 0, rol: "Remote sensing analyst", place: "Universidad de Antioquia",
+                        id: 0, rol: "Satellite Imagery Analyst", place: "Universidad de Antioquia",
                         date: "August 2023 - December 2023", city: "Medellín, Colombia", 
-                        description: "Contribution to the development of algorithms for processing satellite \
-                                    imagery to classify land cover using deep learning techniques."
+                        description: "Contribution to the development of algorithms for the acqusition and \
+                                manipulation of satellite imagery in a project aimed to classify land cover \
+                                using deep learning techniques."
                     },
                     {
-                        id: 1, rol: "Auxiliar student", place: "Universidad Nacional de Colombia",
-                        date: "May 2023 - June 2023", city: "Medellín, Colombia", 
-                        description: "Participation in the data analysis and generation of growth models for \
-                                    four native tree species established as part of 'Más bosques para \
-                                    Medellín' project."
-                    },
-                    {
-                        id: 2, rol: "Auxiliar student", place: "Universidad Nacional de Colombia",
-                        date: "March 2021 - June 2022", city: "Medellín, Colombia", 
-                        description: "Support the teaching work to offering workshops in introduction to R\
-                                      programming language for students of first level of statistics."
+                        id: 1, rol: "Voluntary research associate", place: "KU Leuven",
+                        date: "May 2024 - Present", city: "Online", 
+                        description: "Support of the project on automation, statistical analysis and \
+                                chemometrics for the oxidative dehydrogenation of propane at the \
+                                Dusselier group."
                     }      
                ]}
     },
