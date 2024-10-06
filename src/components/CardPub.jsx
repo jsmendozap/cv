@@ -11,11 +11,11 @@ const CardPub = ({ info }) => {
         >
           {info.name}
         </p>
-        <p className="text-lg font-medium" style={{ fontFamily: "Mukta" }}>
-          {info.auth}
+        <p className="text-base font-medium" style={{ fontFamily: "Mukta" }}>
+          <span className="font-semibold">Authors: </span>{info.auth}
         </p>
         <p className="text-base" style={{ fontFamily: "Mukta" }}>
-          DOI: {info.doi}
+          <span className="font-semibold">DOI: </span>{info.doi}
         </p>
       </Card>
     </div>

@@ -1,18 +1,10 @@
 import About from './pages/About'
-import Home from './pages/Home'
+import Education from './pages/Education'
 import Interest from './pages/Interest'
 import Experiences from './pages/Experiences'
 import Publications from './pages/Publications'
 
 const info = [
-    {
-        id: "home",
-        title: "",
-        subtitle: "",
-        component: Home,
-        info: {es: ["Sensores Remotos", "Análisis espacial", "Modelación Forestal"],
-               en: ["Remote Sensing", "Spatial Analysis", "Forest Modeling"]}
-    },
     {
         id: "about",
         title: {es: "Acerca de mí", en: "About me"},
@@ -22,7 +14,6 @@ const info = [
         info: { es:
                     [
                     "¡Hola!, soy Juan Mendoza",
-                    "Ingeniero Forestal, Universidad Nacional de Colombia",
                     "Poseo una sólida formación en ingeniería y ciencias de la tierra que se complementa con una amplia gama de habilidades en \
                     modelación lineal y no lineal, análisis de series de tiempo y análisis espacial utilizando herramientas como QGIS y\
                     lenguajes de programación tales como R y Python. Además, destaco por mi capacidad en el análisis de datos, la comunicación\
@@ -31,12 +22,42 @@ const info = [
                 en:
                     [
                     "¡Hi!, I am Juan Mendoza",
-                    "Forest Engineer, Universidad Nacional de Colombia",
                     "I have a strong engineering and geoscience background that is complemented by a wide range of skills including linear and \
                     non-linear modeling, time series analysis and spatial analysis, using tools such as QGIS and the R and Python programming languages.\
                     In adittion, I excel in data analysis and efective comunication of results through web \
                     platforms development and the passion I bring to each one of my compromises."    
                     ]}
+    },
+    {
+        id: "education",
+        title: {es: "Educación", en: "Education"},
+        subtitle: {es: "Formación profesional y complementaria",
+            en: "Professional and complementary formation"},
+        component: Education,
+        info: {es: ["Educación formal",
+                    "Ingeniero Forestal",
+                    "Universidad Nacional de Colombia",
+                    "Estudiante de maestria en Earth and Climate System Science",
+                    "University of Hohenheim",
+                    "Educación complementaria",
+                    "Programa de formación habilidades en programación con énfasis en desarrollo de aplicaciones web",
+                    "Universidad de Antioquia",
+                    "Diplomado en inteligencia artificial",
+                    "Universidad Sergio Arboleda"
+                ],
+               en: ["Formal education",
+                    "Forest Engineer",
+                    "Universidad Nacional de Colombia",
+                    "M.Sc. student in Earth and Climate System Science",
+                    "University of Hohenheim",
+                    "Complementary education",
+                    "Certified course in programming skills with emphasis in web development",
+                    "Universidad de Antioquia",
+                    "Certified course in artificial intelligence",
+                    "Universidad Sergio Arboleda"
+
+                ]
+            }
     },
     {
         id: "interest",
@@ -86,32 +107,39 @@ const info = [
                     {
                         id: 0, rol: "Analista de imágenes satelitales", place: "Universidad de Antioquia",
                         date: "Agosto 2023 - Diciembre 2023", city: "Medellín, Colombia", 
-                        description: "Participación en el desarrollo de algoritmos para la adquisión y \
-                                manipulación de imágenes satelitales con fines de clasificación de coberturas \
-                                utilizando técnicas de aprendizaje automático."
+                        description: ["Contribución al desarrollo de scripts de Python para adquirir y procesar \
+                                imágenes satelitales de servicios en la nube, como parte de un projecto enfocado \
+                                a la clasificación de coberturas de la tierra usando técnicas de aprendizaje profundo."]
                     },
                     {
                         id: 1, rol: "Investigador asociado voluntario", place: "KU Leuven",
-                        date: "Mayo 2024 - Actual", city: "Online", 
-                        description: "Apoyo en el proyecto sobre automatización, análisis estadístico y \
+                        date: "Mayo 2024 - Actual", city: "Remoto", 
+                        description: ["Apoyo en el proyecto sobre automatización, análisis estadístico y \
                                 quimiometría para la deshidrogenación oxidativa de propano en el \
-                                grupo Dusselier."
+                                grupo Dusselier.", 
+                                "Desarrollo de una plataforma web para integrar y analizar datos provenientes \
+                                del reactor, cromatógrafo de gases (GC) y espectrómetro de masas (EM) en un sistema\
+                                unificado."
+                            ]
                     }      
                 ],
                en: [
                     {
                         id: 0, rol: "Satellite Imagery Analyst", place: "Universidad de Antioquia",
                         date: "August 2023 - December 2023", city: "Medellín, Colombia", 
-                        description: "Contribution to the development of algorithms for the acqusition and \
-                                manipulation of satellite imagery in a project aimed to classify land cover \
-                                using deep learning techniques."
+                        description: ["Contributed to the development of Python scripts for acquiring \
+                                    and processing satellite imagery from cloud services, as part of a \
+                                    project focused on land cover classification using deep learning \
+                                    techniques."
+                                ]
                     },
                     {
                         id: 1, rol: "Voluntary research associate", place: "KU Leuven",
-                        date: "May 2024 - Present", city: "Online", 
-                        description: "Support of the project on automation, statistical analysis and \
-                                chemometrics for the oxidative dehydrogenation of propane at the \
-                                Dusselier group."
+                        date: "May 2024 - Present", city: "Remote", 
+                        description: ["Support of the project on automation, statistical analysis and\
+                            chemometrics for the oxidative dehydrogenation of propane at the Dusselier group.",
+                            "Development of a web platform to integrate and analyze data coming from the reactor,\
+                            gas chromatograph (GC) and mass spectrometer (MS) in a unified system."]
                     }      
                ]}
     },
@@ -122,16 +150,26 @@ const info = [
         component: Publications,
         info: {es: [
                     {
-                        name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
-                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo, Luis F. Osorio V.",
-                        doi: "En evaluación", id: 0
+                        name: "Trends in planted native tree biomass established in a tropical Andes city water basins",
+                        auth: "Juan S. Mendoza-Páez, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo-Salazar, Luis F. Osorio-Vélez",
+                        doi: "10.1111/rec.14296"
+                    },
+                    {
+                        name: "Allometric equations to quantify aboveground biomass in mixed-species plantations with restoration purposes in the tropical Andes.",
+                        auth: "Juan M. Giraldo-Salazar, Jorge A. Giraldo, Juan S. Mendoza-Páez, Juan C. Sierra, Jairo A. Rueda, Luis F. Osorio-Vélez",
+                        doi: "Aceptado"
                     }
                    ],
                en: [
                     {
-                        name: "Dynamics of aboveground biomass of native tree species established in degraded areas of the tropical Andes",
-                        auth: "Juan Mendoza, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo, Luis F. Osorio V.",
-                        doi: "In submission", id: 0
+                        name: "Trends in planted native tree biomass established in a tropical Andes city water basins",
+                        auth: "Juan S. Mendoza-Páez, Jorge A. Giraldo, Mauricio A. Mazo-Lopera, Juan M. Giraldo-Salazar, Luis F. Osorio-Vélez",
+                        doi: "10.1111/rec.14296"
+                    },
+                    {
+                        name: "Allometric equations to quantify aboveground biomass in mixed-species plantations with restoration purposes in the tropical Andes.",
+                        auth: "Juan M. Giraldo-Salazar, Jorge A. Giraldo, Juan S. Mendoza-Páez, Juan C. Sierra, Jairo A. Rueda, Luis F. Osorio-Vélez",
+                        doi: "In press"
                     }
                ]
             }

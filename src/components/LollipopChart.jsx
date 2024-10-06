@@ -72,8 +72,8 @@ const LollipopChart = ({ year }) => {
   }));
 
   const layout = {
-    width: 360,
-    height: 290,
+    width: 350,
+    height: 250,
     xaxis: {
       title: lang === "es" ? "Área (Km<sup>2</sup>)" : "Area (Km<sup>2</sup>)",
     },
@@ -91,7 +91,7 @@ const LollipopChart = ({ year }) => {
   };
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row w-screen">
       <Plot data={plot} layout={layout} config={{ displayModeBar: false }} />
       <div>
         <img src={img} alt="img" className="w-72 h-56 pt-3 mr-5" />

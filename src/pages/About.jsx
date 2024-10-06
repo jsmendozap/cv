@@ -5,13 +5,12 @@ import email from "../media/gmail.png";
 import gh from "../media/github.png";
 import linkedin from "../media/linkedin.png";
 import Title from "../components/Title";
-import grad from "../media/mortarboard.png";
 
 const About = ({ title, subtitle, info }) => {
   const { lang } = useLang();
 
   return (
-    <div className="mt-8 mx-8 sm:mx-16 lg:ml-72 lg:mr-20 xl:ml-96 xl:mr-32 xl:mt-16">
+    <div className="mx-8 sm:mx-16 lg:ml-72 lg:mr-20 xl:ml-96 xl:mr-32 xl:mt-16">
       <Title title={title} subtitle={subtitle} />
       <div className="lg:flex lg:flex-row mt-10 lg:h-96">
         <div className="flex justify-center lg:w-screen lg:mr-16  xl:mt-10">
@@ -27,22 +26,12 @@ const About = ({ title, subtitle, info }) => {
               <p className="font-semibold text-2xl lg:text-3xl pb-2 xl:mb-3 xl:text-4xl">
                 {lang === "en" ? info.en[0] : info.es[0]}
               </p>
-              <div className="flex justify-center xl:mb-6">
-                <img
-                  src={grad}
-                  alt="graduate"
-                  className="lg:w-5 w-8 h-6 mr-2"
-                />
-                <span className="font-semibold text-lg lg:text-xl xl:text-2xl">
-                  {lang === "en" ? info.en[1] : info.es[1]}
-                </span>
-              </div>
             </div>
             <p
               className="text-justify text-lg pt-6"
               style={{ fontFamily: "Mukta" }}
             >
-              {lang === "en" ? info.en[2] : info.es[2]}
+              {lang === "en" ? info.en[1] : info.es[1]}
             </p>
           </div>
           <div className="flex flex-col lg:flex-row mt-4 lg:mb-9 text-left lg:place-content-around">

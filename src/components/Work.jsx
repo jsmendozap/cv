@@ -17,9 +17,18 @@ const Work = ({ info }) => {
         <p className="text-base" style={{ fontFamily: "Mukta" }}>
           {info.date}
         </p>
-        <p className="text-base" style={{ fontFamily: "Mukta" }}>
-          {info.description}
-        </p>
+        <ul className="list-disc pl-5 text-base" style={{ fontFamily: "Mukta" }}>
+          {info.description.map((el, index) => {
+            return(
+              <>
+                <br/>
+                <li key={index}>
+                  {el}
+                </li>
+              </>
+            )
+          })}
+        </ul>
       </Card>
     </div>
   );

@@ -11,8 +11,8 @@ const Publications = ({ title, subtitle, info }) => {
     <div className="lg:mt-32 mb-32 lg:ml-72 lg:mr-16 mx-8 sm:mx-16 xl:ml-96 xl:mr-32 xl:mt-20">
       <Title title={title} subtitle={subtitle} />
       <div className="my-10">
-        {items.map((el) => {
-          return <CardPub info={el} key={el.id} />;
+        {items.map((el, index) => {
+          return <CardPub info={el} key={index} />;
         })}
       </div>
     </div>
