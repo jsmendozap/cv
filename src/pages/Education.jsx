@@ -27,7 +27,7 @@ const Education = ({ title, subtitle, info }) => {
   ]
 
   return (
-    <div className="mt-8 mx-8 sm:mx-16 lg:ml-72 lg:mr-20 xl:ml-96 xl:mr-32 xl:mt-16"> 
+    <div className="mt-8 mx-8 sm:mx-16 sm:mb-5 lg:ml-72 lg:mr-20 xl:ml-96 xl:mr-32 xl:mt-16"> 
       <Title title={title} subtitle={subtitle} />
       <p className="font-semibold text-sm lg:text-lg xl:text-2xl mb-3 text-left mt-10">
         {currentInfo[0]}

@@ -3,8 +3,17 @@ import Education from './pages/Education'
 import Interest from './pages/Interest'
 import Experiences from './pages/Experiences'
 import Publications from './pages/Publications'
+import Home from './pages/Home'
 
 const info = [
+    {
+        id: "home",
+        title: "",
+        subtitle: "",
+        component: Home,
+        info: {es: ["Sensores Remotos", "Análisis espacial", "Modelación Forestal"],
+               en: ["Remote Sensing", "Spatial Analysis", "Forest Modeling"]}
+    },
     {
         id: "about",
         title: {es: "Acerca de mí", en: "About me"},

@@ -14,6 +14,11 @@ const MobileMenu = () => {
       children: [
         {
           label: (
+            <Label id="#home" label={lang === "es" ? "Inicio" : "Home"} />
+          ),
+        },
+        {
+          label: (
             <Label id="#about" label={lang === "es" ? "Acerca" : "About"} />
           ),
         },

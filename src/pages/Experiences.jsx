@@ -9,7 +9,7 @@ const Experiences = ({ title, subtitle, info }) => {
   const items = lang === "en" ? info.en : info.es;
 
   return (
-    <div className="lg:mt-8 mt-32 md:mt-40 mx-8 sm:mx-16 lg:ml-72 lg:mr-16 xl:ml-96 xl:mr-32 xl:mt-20">
+    <div className="lg:mt-8 mt-32 md:mt-40 mx-8 sm:mx-16 lg:ml-72 lg:mr-16 xl:ml-96 xl:mr-32 xl:mt-24">
       <Title title={title} subtitle={subtitle} />
       <div className="mt-10 lg:ml-10">
         <Timeline>

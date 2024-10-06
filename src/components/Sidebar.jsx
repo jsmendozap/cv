@@ -21,6 +21,7 @@ const Sidebar = () => {
         {lang === "es" ? "Ingeniero Forestal" : "Forest Engineer"}
       </span>
       <div className="flex flex-col my-10">
+        <Label id="#home" label={lang === "es" ? "Inicio" : "Home"} />
         <Label id="#about" label={lang === "es" ? "Acerca" : "About"} />
         <Label id="#education" label={lang === "es" ? "Educación" : "Education"} />
         <Label
